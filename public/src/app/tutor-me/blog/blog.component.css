@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+
+body{
+	 background: #F2F2F2;
+	 margin:0;
+	 /*padding: 0;*/
+}
+
+.hello {
+	max-width: 950px;
+	margin: 0 auto;
+	height: auto;
+}
+
+.brick {
+  float: left;
+  height: auto;
+  width: 300px;
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 15px;
+}
+
+.brick h1 {
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.brick p {
+	font-family: 'Lato', sans-serif;
+}
+
+.brick a {
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	color: #FF7F50;
+}
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 600px){
+	.hello {
+		max-width: 310px;
+		margin: 0 auto;
+		
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 900px){
+	.hello {
+		max-width: 610px;
+		margin: 0 auto;
+		
+	}
+}
+
+
+
+
+
+
+
+

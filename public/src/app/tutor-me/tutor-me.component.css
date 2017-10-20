@@ -1,0 +1,199 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    width: 100%;
+}
+
+a{
+  color: #556267;
+  text-decoration: none;
+}
+
+/* HEADER */
+
+.aheader{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: 
+  "logo";
+  grid-area: header;
+  font-color: black;
+  font-family: 'Lato', sans-serif;
+  color: red;
+  height: 30px;
+  padding: 3%;
+  width: 92%;
+  text-align: center;
+}
+
+.home{
+  display: none;
+  grid-area: home;
+}
+
+.about{
+  display: none;
+  grid-area: about;
+}
+
+.blog{
+  display: none;
+  grid-area: blog;
+}
+
+.impacts{
+  display: none;
+  grid-area: impacts;
+}
+
+.events{
+  display: none;
+  grid-area: events;
+}
+
+.contact{
+  display: none;
+  grid-area: contact;
+}
+
+.logo {
+  display: inline;
+  grid-area: logo;
+  font-family: 'Bungee Shade', cursive;
+  align-self: start;
+}
+
+/* hamburger shows at appropriate width */
+
+.hamburger{
+  display: inline-block;
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 25px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:2em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:15px 25px 0px 15px;
+  color:#999;
+  border:0;
+  font-size:4em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+/* drop down menu */
+
+.menu{ height: 130vh; z-index:1000000; margin-right: -5px; font-weight:bold; width:100%; background:rgba(255, 255, 255, 0.9);  position:absolute; text-align:center; font-size:14px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li { display: block;   padding:20px 0 20px 0; }
+
+.menu li:hover, .menu li:focus {
+  outline: none;
+  color: #FF7F50;
+}
+
+.menu ul li a { 
+  padding: 8px 0;
+}
+
+.menu a{text-decoration:none; color:red; font-size: 2em; font-family: 'Bungee Shade', cursive;}
+
+.menu a:hover{text-decoration:none; color:#fff;}
+
+
+/* MEDIA QUERIES*/
+
+@media(min-width: 600px ){
+  .imageResize{
+    width: auto\9;
+    max-width: 100%;
+  	height: auto;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .cross{
+    display: none;
+  }
+
+  .home{
+    display: inline;
+    grid-area: home;
+  }
+
+  .about{
+    display: inline;
+    grid-area: about;
+  }
+
+  .blog{
+    display: inline;
+    grid-area: blog;
+  }
+
+  .impacts{
+    display: inline;
+    grid-area: impacts;
+  }
+
+  .events{
+    display: inline;
+    grid-area: events;
+  }
+
+  .contact{
+    display: inline;
+    grid-area: contact;
+  }
+
+  .logo {
+    display: inline;
+    grid-area: logo;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 30px;
+    color: red;
+    align-self: center;
+
+  }
+
+  .aheader{
+    display: grid;
+    grid-template-columns: 100px 5% repeat(6, 82px);
+    grid-template-rows: 30px auto;
+    grid-area: header;
+    grid-template-areas:
+      "logo ... home about blog impacts events contact";
+    padding: 4%;
+    text-align: center;
+    font-size: 1rem;
+    width: 92%;
+    justify-content: center;
+  }
+
+ 
+}
+
+

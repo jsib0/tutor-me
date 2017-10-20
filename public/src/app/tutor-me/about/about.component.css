@@ -1,0 +1,134 @@
+.about-header {
+	background-image: url("../../../assets/img/about-hero.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	display: grid;
+	grid-template-columns: 10% 600px 25% auto;
+	grid-template-rows: 25% 50% 25%;
+}
+
+.intro-about-header {
+	grid-column: 2;
+	grid-row: 2;   
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,255,255, 0.8);
+	z-index: 1;
+	padding: 5%;
+}
+
+.logo{
+    position: absolute;
+	height: 50px;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+.intro-about-header h1 {
+	font-size: 4em;
+	font-family: 'Cormorant Garamond', serif;
+	line-height: 1em;
+}
+
+.intro-about-header span {
+	color: #FF7F50;
+}
+
+.intro-about-header p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2em;
+}
+
+/* BODY */
+
+.about-body{
+	display: grid;
+	height: auto;
+	width: 100%;
+	grid-template-columns: 10% 30% 10% 30% 10%;
+	grid-template-rows: 20% 40% 40% ; 
+	grid-template-areas: 
+	"... we-believe we-believe we-believe ..."
+	"... body-1 ... body-2 ..."
+	"... body-3 ... body-4 ...";
+	justify-content: center;
+	text-align: center;
+}
+
+.we-believe {
+	justify-self: center;
+	font-family: 'Merriweather', serif;
+	font-size: 1.5rem;
+	grid-area: we-believe;
+}
+
+.believe-blue {
+	color: #00ACF3;
+	padding-left: 95px;
+}
+
+.body-boxes {
+	padding: 10px;
+}
+.body-boxes h2 {
+	padding: 10px;
+	font-family: 'Lato', sans-serif;
+	color: #252838;
+}
+.body-boxes p {
+	font-family: 'Open Sans', sans-serif;
+	color: #666666;
+}
+.body-1 {grid-area: body-1;}
+.body-2 {grid-area: body-2;}
+.body-3 {grid-area: body-3;}
+.body-4 {grid-area: body-4;}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 640px){
+	.intro-about-header h1 {
+		font-size: 2.5em;
+		font-family: 'Cormorant Garamond', serif;
+		line-height: 1em;
+	}
+
+	.intro-about-header p {
+		font-family: 'Lato', sans-serif;
+		font-size: 1em;
+	}
+
+	.about-body{
+		grid-template-columns: 15% 70% 15%;
+		grid-template-rows: 20% 20% 20% 20% 20% ; 
+		grid-template-areas:
+		"... we-believe ..."
+		"... body-1 ..."
+		"... body-2 ..."
+		"... body-3 ..."
+		"... body-4 ...";
+	}
+
+	.we-believe {
+		font-size: 1.2em;
+		padding: 1px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.about-header {
+		grid-template-columns: 10% 80% 5% auto;
+		grid-template-rows: 15% 60% 5% auto;
+	}
+}
+
+
+
+

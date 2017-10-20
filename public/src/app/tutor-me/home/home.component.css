@@ -1,0 +1,136 @@
+.home-header {
+	background-image: url("../../../assets/img/tutor-hero.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 100%;
+	position: relative;
+	z-index: -1;
+	display: grid;
+	grid-template-columns: 20% 45% 25% auto;
+	grid-template-rows: 25% 50% 25%;
+}
+
+.intro-header {
+	grid-column: 2;
+	grid-row: 2 ;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-color: rgba(255,255,255, 0.8);
+	z-index: 1;
+	padding: 5%;
+}
+
+.intro-header h1 {
+	font-size: 4rem;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.intro-header span {
+	color: #FF7F50;
+}
+
+.intro-header p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.2rem;
+}
+
+.body{
+	display: grid;
+	padding: 5px;
+	height: 400px;
+	justify-content: center;
+	grid-template-columns: 5% 170px 5px 170px 5px 170px 5px 170px 5%;
+	grid-template-rows: 100px 60% auto;
+	grid-template-areas:
+      "... .... ... services services services .... .... ..."
+      "... science ... technology ... engineering ... mathematics ...";
+	grid-gap: 1%;
+	background-image: url("../../../assets/img/blue_picture.png");
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.body div {
+	display: inline;
+	text-align: center;
+}
+
+.body p {
+	color: #fff;
+	font-size: 1em;
+	font-family: 'Lato', sans-serif;
+}
+
+.body h2 {
+	color: #FF7F50;
+	font-size: 2em;
+	line-height: 10px;
+}
+
+.services {
+	grid-area: services;
+	justify-self: center;
+	font-size: 3em;
+	font-family: 'Cormorant Garamond', serif;
+	color: #fff;
+}
+
+.science {
+	grid-area: science;
+	padding: auto;
+}
+
+.technology {
+	grid-area: technology;
+}
+
+.engineering {
+	grid-area: engineering;
+}
+
+.mathematics {
+	grid-area: mathematics;
+}
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 700px){
+	.home-header {
+		grid-template-columns: 10% 70% auto;
+	}
+	.intro-header {
+		height: auto;
+	}
+	.intro-header h1 {
+		font-size: 3rem;
+	}
+
+}
+
+@media screen and (max-width: 800px){
+	.body {
+		grid-template-columns: 70%;
+		grid-template-rows: 100px 20% 20% 20% 20% auto;
+		grid-template-areas:
+      "services "
+      "science"
+      "technology"
+      "engineering"
+      "mathematics";
+      height: auto;
+	}
+
+	.body h2 {
+		font-size: 1.2em;
+		line-height: 5px;
+	}
+	.services {
+		font-size: 2em;
+	}
+}
