@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { TutorMeService } from './tutor-me.service';
 declare var jquery: any;
 declare var $:any;
 
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tutor-me',
@@ -10,8 +11,11 @@ declare var $:any;
   styleUrls: ['./tutor-me.component.css']
 })
 export class TutorMeComponent implements OnInit {
-  events: any;
-  constructor(  ) { }
+
+
+ 
+
+  constructor( private _tutormeService: TutorMeService, private _router: Router ) { }
 
   ngOnInit() {
   }
@@ -45,5 +49,8 @@ export class TutorMeComponent implements OnInit {
      });
 
    }
+
+
+  
 
 }

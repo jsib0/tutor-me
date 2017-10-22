@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http'; 
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TutorMeComponent } from './tutor-me/tutor-me.component';
-import { ImpactComponent } from './tutor-me/impact/impact.component';
 import { BlogComponent } from './tutor-me/blog/blog.component';
 import { EventsComponent } from './tutor-me/events/events.component';
 import { ContactComponent } from './tutor-me/contact/contact.component';
@@ -18,7 +18,6 @@ import { MasonryModule } from 'angular2-masonry';
   declarations: [
     AppComponent,
     TutorMeComponent,
-    ImpactComponent,
     BlogComponent,
     EventsComponent,
     ContactComponent,
@@ -29,6 +28,7 @@ import { MasonryModule } from 'angular2-masonry';
   imports: [
     BrowserModule,
     routing,
+    FormsModule,
     HttpModule,
     MasonryModule
   ],

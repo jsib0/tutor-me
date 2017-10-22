@@ -1,6 +1,5 @@
 let controller = require('./../controllers/controller');
 
-module.exports = app => {
-	app.get('/api/events', controller.allEvents);
-	
+module.exports = app => {	
+	app.post('/api/flying', controller.createEvent);	
 }

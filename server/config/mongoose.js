@@ -4,7 +4,7 @@ let fs = require('fs');
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/tutor-me');
+mongoose.connect('mongodb://localhost/tutor-me', { useMongoClient: true });
 
 let models_path = path.join(__dirname, '../models/');
 

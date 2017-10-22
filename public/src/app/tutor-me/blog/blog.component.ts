@@ -29,13 +29,8 @@ export class BlogComponent implements OnInit {
      {header: 'What Better Way Than Pay',
      title: ' Lorem sit amet neque amet,  amet neque amet, laboriosam commodi ratione, iusto ea.Quis reprehenderit. Lorem sit amet neque amet, Quis reprehenderit.Quis reprehenderit ipsam repellat neque amet, expedita eligendi tenetur nam nulla fugit, ea praesentium dolorem provident obcaecati enim ullam aut iure quibusdam.',
      more: 'Read more...'},
-
-
-
-     ]
-    
-
-
+   ]
+ 
   public myOptions: MasonryOptions = { 
   	 fitWidth: true,
   	 gutter: 10,
@@ -45,13 +40,9 @@ export class BlogComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  
-
-
+ 
   }
 
 
-  
-
-
+ 
 }

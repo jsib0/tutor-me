@@ -45,11 +45,6 @@ a{
   grid-area: blog;
 }
 
-.impacts{
-  display: none;
-  grid-area: impacts;
-}
-
 .events{
   display: none;
   grid-area: events;
@@ -154,11 +149,6 @@ a{
     grid-area: blog;
   }
 
-  .impacts{
-    display: inline;
-    grid-area: impacts;
-  }
-
   .events{
     display: inline;
     grid-area: events;
@@ -181,11 +171,11 @@ a{
 
   .aheader{
     display: grid;
-    grid-template-columns: 100px 5% repeat(6, 82px);
+    grid-template-columns: 100px 5% repeat(5, 82px);
     grid-template-rows: 30px auto;
     grid-area: header;
     grid-template-areas:
-      "logo ... home about blog impacts events contact";
+      "logo ... home about blog events contact";
     padding: 4%;
     text-align: center;
     font-size: 1rem;

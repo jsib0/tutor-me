@@ -5,13 +5,22 @@ let Event = mongoose.model('Event');
 
 module.exports = {
 
-	allEvents: (req, res) => {
-		Event.find({}).exec((err, events)=>{
+	createEvent: (req, res) => {
+		console.log(req.body);
+		let event = new Event(req.body);
+		event.save((err, event) => {
 			if(err){
-				console.log(err)
+				console.log(err);
+				return res.status(500).send("Error saving friend");
 			} else {
-				return res.json(events)
+				console.log(event);
+				res.json(event);
 			}
 		})
 	}
+
+	
+
+
+
 }
