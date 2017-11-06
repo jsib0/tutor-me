@@ -17,7 +17,7 @@ a{
 
 .aheader{
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   grid-template-areas: 
   "logo";
   grid-area: header;
@@ -175,7 +175,7 @@ a{
     grid-template-rows: 30px auto;
     grid-area: header;
     grid-template-areas:
-      "logo ... home about blog events contact";
+      "logo ... home about blog contact";
     padding: 4%;
     text-align: center;
     font-size: 1rem;

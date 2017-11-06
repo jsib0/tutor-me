@@ -1,10 +1,67 @@
-div {
-	width: 300px;
+* { box-sizing: border-box; }
+
+body {
+	 background: #F2F2F2;
+	 margin:0;
+}
+
+.container {
+	margin-top: 50px;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	padding: 1px;
+	height: 1000px;
+}
+
+.from-you {
+	position: relative;
 	margin: 0 auto;
+	width: 40%;
 	text-align: center;
 }
 
-h1 {
-  font-family: 'Bungee Shade', cursive;
-  color: red;
-}	
+form {
+	margin: 0 auto;
+	width: 40%;
+	align-content: 
+}
+
+.contact-us {
+	display: block;
+	width: 100%;
+	margin-bottom: 30px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+#name, #email {
+	height: 40px;
+	font-size: 20px;
+}
+
+#message {
+	font-size: 12px;
+	resize: none;
+	height: 100px;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 0 auto;
+	font-size: .75em;
+ 	color: #FFFFFF;
+    background: #FF7F50;
+    padding: 12px 12px;
+    width: 40%;
+    min-width: 100px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+button:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+}
